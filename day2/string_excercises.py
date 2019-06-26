@@ -19,7 +19,7 @@ print(f'Witoj, {meno} {naz}'[-1:-6:-1])
 # # print(raz.strip(' '))
 # # print(raz.replace(' ', ""))
 
-
+#komentarz na potrzeby commita
 
 
 
