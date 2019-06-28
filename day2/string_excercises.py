@@ -23,3 +23,4 @@ print(f'Witoj, {meno} {naz}'[-1:-6:-1])
 
 
 
+
