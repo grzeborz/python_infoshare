@@ -66,5 +66,4 @@ suma=1
 while(silnia !=i):
     i += 1
     suma = suma * i
-print(suma)
 print(f"Kierownikuuu, twoja liczba to {suma}.")
