@@ -131,6 +131,5 @@ print(dlugosc)
 print(lista_indeksow)
 
 
-
 for i in lista_indeksow:
     print(text_input[i], end="") #end jest po to by pokazać jaki znak jest na końcu
