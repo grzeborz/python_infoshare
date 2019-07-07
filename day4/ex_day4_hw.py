@@ -89,4 +89,23 @@ rozb_zdanie(first_arg)
 
 # 8 Zaimportuj modul (plik) i uzyj funkcji z tego modulu
 #  help(nazwa_pliku) - zadokumentuj troche kodu!
+help(modul.py)
 
+# import os
+# from sys import argv
+#
+# program_name, first_arg, second_arg = argv
+
+# reader = open('modul.py', 'r')
+# filename = __name__
+# filepath = __file__
+# full_path = os.getcwd()
+# try:
+#     reader.write(f'{filename}\n {filepath}\n {full_path}')
+# finally:
+#     reader.close()
+#
+# imie_słuchacza = input('Podaj imie: ')
+#
+# with open('modul.py', 'r') as a_reader:
+#     a_reader.read()
