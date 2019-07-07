@@ -103,27 +103,27 @@ while True:
                 continue
             if krok2.lower() == 'prosto':
                 print("Giniesz od rzuconego tulipana na odległość. Przechodziłeś w miejscu rozgrywanych zawodów osiedlowych")
-                break
+                exit(0)
             elif krok2.lower() == 'lewo':
                 print("Giniesz pod kołami szalonego kierowcy wózka widłowego który jechał do ziomka naprawić jego poloneza")
-                break
+                exit(0)
             elif krok2.lower() == 'prawo':
                 print("Przechodząc pod najbliższym drzewem atakuje i przegryza Ci tętnicę wściekła wiewiórka\n"
                       "Giniesz, leżąc pod najbliższą ławeczką")
-                break
+                exit(0)
             elif krok2.lower() == 'tył':
                 print("Kółko gospodyń okazuje się zakamuflowanym gangiem dzielnocowych kobiet w średnim wieku\n"
                       "po zaproszeniu do jednego z lokali zostajesz otruty nieświeżym Brownie z Wegańską Kawą\n"
                       "Giniesz od choroby popromiennej")
-                break
+                exit(0)
             else:
                 print("Kerownikuuu, nie umiemy czytać i pisać :D Jak już się nauczysz, wróć do mnie i pograj :P")
-                break
+                exit(0)
     elif kierunek.lower() == 'lewo':
         print("Dochodzisz do najbliższego Urzędu Skarbowego, i nieopatrznie zostajesz uznany za programistę \n"
               "dostajesz za karę 90% VAT."
               "Giniesz od niewypłacalności")
-        break
+        exit(0)
     else:
         print("Kerownikuuu, nie umiemy czytać i pisać :D Jak już się nauczysz, wróć do mnie i pograj :P")
 
