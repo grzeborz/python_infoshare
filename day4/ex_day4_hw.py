@@ -8,8 +8,8 @@
 # 2. Napisz funkcję, powtarzającą słowo x razy (2 parametry - slowo oraz ile razy powtorzyc)
 # (bedzie potrzebna petla for in oraz klasa range)
 
-first_arg = input("Kierowniku, zapodaj słówko: ")
-second_arg = input("Kieronikuuuu, a ile razy powtórzyć? Wpisz liczbę: ")
+# first_arg = input("Kierowniku, zapodaj słówko: ")
+# second_arg = input("Kieronikuuuu, a ile razy powtórzyć? Wpisz liczbę: ")
 
 # def powtorka(text, liczba):
 #     for x in range(0, int(liczba)):
@@ -18,12 +18,12 @@ second_arg = input("Kieronikuuuu, a ile razy powtórzyć? Wpisz liczbę: ")
 # powtorka(first_arg, second_arg)
 
 # 3. Napisz funkcje, ktora rozbije zdanie na slowa i kazde z nich wypisze w nowej linii (bedzie potrzebna petla for in)
-def split_sentence_to_words(sentence):
-   words = str(first_arg).split(" ")
-   for word in words:
-       print(word)
-
-split_sentence_to_words(first_arg)
+# def split_sentence_to_words(sentence):
+#    words = str(first_arg).split(" ")
+#    for word in words:
+#        print(word)
+#
+# split_sentence_to_words(first_arg)
 # 4. Napisz funkcję, która przyjmuje dowolną ilość parametrów - zaloz ze beda podawane liczbowe, funkcja ma wypisywac
 # te parametry, uzywajac petli for in
 
@@ -74,22 +74,29 @@ split_sentence_to_words(first_arg)
 # 7. Napisz funkcję rozbijajaca zdanie na slowa (ma zwracac liste ze slowami) oraz funkcje sortujaca liste slow,
 # nastepnie wywolaj sortowanie na slowach podanego przez uzytkownika zdania
 
-lista_zdanie = []
-
-def rozb_zdanie(sentence):
-    words = str(first_arg).split(" ")
-    for word in words:
-        print(word)
-        lista_zdanie.append(word)
-        lista_zdanie.sort()
-    print(f'Zdanie 7. Odp: Zrobiłem w jednej funkcji, wyszło szybciej, a oto wynik: {lista_zdanie}')
-
-rozb_zdanie(first_arg)
+# lista_zdanie = []
+#
+# def rozb_zdanie(sentence):
+#     words = str(first_arg).split(" ")
+#     for word in words:
+#         print(word)
+#         lista_zdanie.append(word)
+#         lista_zdanie.sort()
+#     print(f'Zdanie 7. Odp: Zrobiłem w jednej funkcji, wyszło szybciej, a oto wynik: {lista_zdanie}')
+#
+# rozb_zdanie(first_arg)
 
 
 # 8 Zaimportuj modul (plik) i uzyj funkcji z tego modulu
 #  help(nazwa_pliku) - zadokumentuj troche kodu!
-help(modul.py)
+
+
+from modul import multiply as mm
+from modul import add
+help(mm)
+help(add)
+opracja = mm(5,6)
+print(opracja)
 
 # import os
 # from sys import argv
