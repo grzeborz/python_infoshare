@@ -8,6 +8,9 @@ def add(first_number, second_number):
    return first_number + second_number
 
 def multiply(first_number, second_number):
+    '''This module is for multiplying
+    some numbers. User have to add the
+    numbers into  the calculation'''
     return first_number * second_number
 
 # print(f'Wynik funkcji multiply wynosi: {multiply(add(2, 6), 2)}')
