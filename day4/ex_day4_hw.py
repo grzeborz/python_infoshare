@@ -93,10 +93,13 @@
 
 from modul import multiply as mm
 from modul import add
+import module
+
 help(mm)
 help(add)
 opracja = mm(5,6)
 print(opracja)
+
 
 # import os
 # from sys import argv
