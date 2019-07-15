@@ -257,21 +257,21 @@
 
 # oblicz częstość elementów w liście (ile razy)
 # jedna wersja zwykla pętle, ify itd
-my_list = [10,10,20,10,10,20,10,20,20,20,40,50,40,10,30,50,50,30]
-
+# my_list = [10,10,20,10,10,20,10,20,20,20,40,50,40,10,30,50,50,30]
+#
 dict_unique = {}
-for i in my_list:
-    if i in dict_unique:
-        dict_unique[i] += 1
-    else:
-        dict_unique[i] = 1
-
-
-print(f"Pierszy sposó: {dict_unique}")
+# for i in my_list:
+#     if i in dict_unique:
+#         dict_unique[i] += 1
+#     else:
+#         dict_unique[i] = 1
+#
+#
+# print(f"Pierszy sposó: {dict_unique}")
 
 
 # druga - moze jest jakis modul gotowy???
-# my_list = [10,10,20,10,10,20,10,20,20,20,40,50,40,10,30,50,50,30]
+my_list = [10,10,20,10,10,20,10,20,20,20,40,50,40,10,30,50,50,30]
 
 def liczba_elem(elements_in_list):
     for i in my_list:
@@ -280,10 +280,16 @@ def liczba_elem(elements_in_list):
         else:
             dict_unique[i] = 1
     return dict_unique
+print(liczba_elem(dict_unique))
 
 print([i for i in liczba_elem(my_list)])
 
 # baza_film = {2000:"SpiderMan", 2001: "Van Helsing", 2003:"God Father"}
+#
+# baza_film[2000] = ["Animatrix", "Transformers 1"]
+# baza_film[2009] = ["Transformers 3"]
+#
+# # baza_film[2000
 #
 # def dict_name(dict):
 #     """
@@ -292,11 +298,13 @@ print([i for i in liczba_elem(my_list)])
 #     :return:
 #     """
 #     for key,item in dict.items():
-#         print(f"W roku {key} powstał film {item}")
+#         # print(f"W roku {key} powstał film {item}")
+#         print(f"W roku {key} powstał film {[item for  key in dict.items()]}")
 #
 # dict_name(baza_film)
 #
 # baza_film[2001]= "Doom"
 #
 # dict_name(baza_film)
-
+#
+# print(alll = [])
