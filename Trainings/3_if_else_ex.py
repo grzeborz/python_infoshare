@@ -4,14 +4,21 @@
 #     C = (F - 32) * (5/9)
 #     F = C * (9 / 5) + 32
 
-jednostka_temperatury = input("Podaj proszę jednostkę temperatury: ")
-tempseratura = input("Podaj proszę temperaturę: ")
+typ_t = input("podaj skale temperatury[C° lub F°]: ")
+temp = int(input("podaj temperature: "))
 
-def zmiana_temperatury(jenostka, temperatura):
-    '''
-    Funkcja do konwersji temparatury
-    :param jenostka:
-    :param temperatura:
-    :return:
-    '''
+def obliczanie_temp(typ, stopnie):
+	"""funkvja do obliczania temp
+	"""
+	if typ_t.upper() == "C":
+		temp_f = (temp+32)*1.8000
+		print(f"Temperatura w F° to {(temp_f)} stopni")
+	elif typ_t.upper() == "F":
+		temp_c = (temp-32)/1.8000
+		print(f"Temperatura w C° to {(temp_c)} stopni")
+	else:
+		print("Blad")
+		
+print(obliczanie_temp(typ_t, temp))
+		
 
