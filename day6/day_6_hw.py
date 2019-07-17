@@ -68,7 +68,7 @@ artykul = "article.txt"
 
 podaj_wyraz = input("Proszę podaj słowo które znajduje się w artykule: ")
 
-with open(artykul , "r") as plik:
+with open(artykul , "w") as plik:
     #print(plik.readlines(), end="")
     tekst_lista = plik.readlines()
     # print(tekst_lista)
