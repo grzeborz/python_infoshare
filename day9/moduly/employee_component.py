@@ -1,7 +1,7 @@
 from day9.moduly.Employee import Employee
 from day9.moduly.Articles import bike_types, Bike, Frame, Wheel
 
-new_employee = Employee("Grzegporz", "Szyperek")
+new_employee = Employee("Mateusz", "Surname")
 another_new_employee = Employee("Jan")
 another_new_employee.say_hello()
 
