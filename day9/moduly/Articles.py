@@ -27,7 +27,7 @@ class Bike(object):
         """
         print(f"They see me rollin' {self.color} bike")
 
-    def riniging(self):
+    def ringing(self):
         """
         They see me rining my bike
         :return:
