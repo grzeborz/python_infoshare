@@ -2,6 +2,7 @@
 
 bike_types = {"cross":"Cross bicycle", "road":"Road bicycle", "MTB":"Off road"}
 
+
 class Bike(object):
     def __init__(self, color, type, front_wheel, back_wheel, frame, handlebar = "fitness", seat = "classic, stock, seat"):
         """
@@ -33,6 +34,28 @@ class Bike(object):
         :return:
         """
         print(f"They see me rollin' & ringing my {self.type} bike")
+
+    def __repr__(self):
+        return "Bike type is: %s, color: %s, seat: %s" % (self.type,self.color, self.seat)
+
+    def __str__(self):
+        return "Bike type is: %s, color: %s, seat: %s" % (self.type,self.color, self.seat)
+
+class ElectricBike(Bike):
+    """
+
+    """
+    def increase_power(selfsel):
+        print("Motor power increased")
+
+    def ringing(self):
+        """
+        They see me rining my bike
+        :return:
+        """
+        print(f"They see me rollin' & I dont need to ring")
+
+
 
 class Wheel(object):
     """Producing bicycle wheels"""
