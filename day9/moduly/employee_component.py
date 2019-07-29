@@ -10,11 +10,13 @@ back_wheel = Wheel(28,"Steel",  "Black", 100)
 frame = Frame(19, "red", "sport")
 
 rowerek = Bike("blue", bike_types["MTB"], front_wheel, back_wheel, frame)
-print(rowerek)
-
-#by drukowało reprezentację tej klasy https://stackoverflow.com/questions/1535327/how-to-print-instances-of-a-class-using-print
-
-print(type(rowerek))
-print(rowerek.color)
-print(rowerek.back_wheel)
-print(rowerek.handlebar)
+# print(rowerek)
+#
+# #by drukowało reprezentację tej klasy https://stackoverflow.com/questions/1535327/how-to-print-instances-of-a-class-using-print
+#
+# print(type(rowerek))
+# print(rowerek.color)
+# print(rowerek.back_wheel)
+# print(rowerek.handlebar)
+rowerek.ride()
+rowerek.riniging()

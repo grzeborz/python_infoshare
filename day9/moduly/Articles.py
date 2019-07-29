@@ -20,6 +20,20 @@ class Bike(object):
         self.back_wheel = back_wheel
         self.frame = frame
 
+    def ride(self):
+        """
+        They haitin'
+        :return:
+        """
+        print(f"They see me rollin' {self.color} bike")
+
+    def riniging(self):
+        """
+        They see me rining my bike
+        :return:
+        """
+        print(f"They see me rollin' & ringing my {self.type} bike")
+
 class Wheel(object):
     """Producing bicycle wheels"""
     def __init__(self, wheel_size, wheel_material, wheel_color, spokes):
