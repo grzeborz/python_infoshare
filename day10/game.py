@@ -22,19 +22,25 @@ class Character(object):
         self.health = health
         self.damage = damage
         self.armor = armor
+        self.character_state = "Alive"
 
-    def attack(self, target_character):
-        target_character.defend(self.damage)
+    def __str__(self):
+        return "Character health value: %s" % (self.health)
+
+    def attack(self, target_character, dice_def):
+        if (dice_def > 3):
+            print(f"Roll defence dice is: {dice_def}, You were able to parry attack")
+            pass
+        else:
+            target_character.defend(self.damage)
 
     def defend(self, damage):
         damage_to_health = max(damage - self.armor, 0)
         self.armor = max(self.armor - damage, 0)
-        self.health = self.health - damage_to_health
+        self.health = max(self.health - damage_to_health, 0)
+        if (self.health == 0):
+            print(f"Your health is equal: {self.health} YOU ARE DEAD. END OF GAME")
+            self.character_state = "Dead"
+            # raise RuntimeError("YOU ARE DEAD. You can't kill dead")
+            # exit(0)
 
-
-
-
-
-# simple_dice = Dice()
-#
-# print(f"Rolled with number: {simple_dice.roll()}")
