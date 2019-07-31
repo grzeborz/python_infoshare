@@ -68,22 +68,24 @@ artykul = "article.txt"
 
 podaj_wyraz = input("Proszę podaj słowo które znajduje się w artykule: ")
 
-with open(artykul , "w") as plik:
+with open(artykul , "r+") as plik:
     #print(plik.readlines(), end="")
     tekst_lista = plik.readlines()
     # print(tekst_lista)
     tekst_splitted = []
+    dict_words = {}
     for word in tekst_lista:
         word = ''.join(x for x in word if x not in '()",\n?.')
         slowka = word.split()
         for slowo in slowka:
             tekst_splitted.append(slowo)
-        dict_words = {}
         for word in tekst_splitted:
+            dict_words.update(word)
             if word in dict_words:
                 dict_words[word] +=1
             else:
                 dict_words[word] = 1
+            return dict_words
     szukana = [value for (key, value) in dict_words.items() if key == podaj_wyraz]
     print(dict_words)
     print(szukana)

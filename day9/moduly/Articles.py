@@ -20,6 +20,7 @@ class Bike(object):
         self.front_wheel = front_wheel
         self.back_wheel = back_wheel
         self.frame = frame
+        self.additional_elemnts = None
 
     def ride(self):
         """
