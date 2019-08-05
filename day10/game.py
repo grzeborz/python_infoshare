@@ -25,13 +25,14 @@ class Character(object):
         self.character_state = "Alive"
 
     def __str__(self):
-        return "Character health value: %s" % (self.health)
+        return "I am a game character %s, my health value: %s" % (self.__class__.__name__, self.health)
 
     def attack(self, target_character, dice_def):
         if (dice_def > 3):
             print(f"Roll defence dice is: {dice_def}, You were able to parry attack")
             pass
         else:
+            print(f"This is attack of character class {self.__class__.__name__}")
             target_character.defend(self.damage)
 
     def defend(self, damage):
@@ -44,3 +45,25 @@ class Character(object):
             # raise RuntimeError("YOU ARE DEAD. You can't kill dead")
             # exit(0)
 
+class Barbarian(Character):
+    """
+
+    """
+    def __init__(self, health=10, strength=5 , damage =2, armor=5, anger=1):
+        super().__init__()
+        self.anger = anger
+
+    def attack(self, target_character, dice_def):
+        """
+        modified attack for barbadian
+        :param target_character:
+        :param dice_def:
+        :return:
+        """
+        print(f"This is attack of character class {self.__class__.__name__}")
+        if (dice_def > 3):
+            print(f"Roll defence dice is: {dice_def}, You were able to parry attack")
+            pass
+        else:
+            target_character.defend(self.damage + self.anger)
+            super().attack(target_character, dice_def)
