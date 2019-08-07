@@ -3,6 +3,15 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 # napisac klasę o nazwie np SpamSender w oddzielnym pliku - wykorzystać kod z Day10\exercises\mail.py
 class SpamSender(object):
+    def __init__(self, email, password):
+        """
+
+        :param email:
+        :param password:
+        """
+        self.email = email
+        self.password = password
+
 
 # SpamSender w konstruktorze powinien mieć możliwość podania adresu email i hasła do skrzynki pocztowej,
 # z ktorej bedzie wysylany spam

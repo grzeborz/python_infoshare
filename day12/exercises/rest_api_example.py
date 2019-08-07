@@ -2,7 +2,7 @@ import requests
 #import json
 #http://www.recipepuppy.com/api/?i=onions,garlic&q=omelet&p=3
 
-response = requests.get('http://www.recipepuppy.com/api/', params={'i':'omions,garlic', 'q':'omlet', 'p':'1'})
+response = requests.get('http://www.recipepuppy.com/api/', params={'i':'onions,garlic', 'q':'omelet', 'p':'1'})
 
 print(response)
 
